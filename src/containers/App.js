@@ -10,6 +10,7 @@ import funnysite from '../images/funnysite.png';
 import funnysiteredux from '../images/funnysiteredux.png';
 import mars from '../images/mars.png';
 import smartbrain from '../images/smartbrain.png';
+import blog from '../images/blog.png';
 
 import {
    DiPython,
@@ -108,8 +109,12 @@ class App extends React.Component {
                      <h1 className="tc b" style={{fontSize:"90px"}}>About me
                         <span style={{color:'#DE0208'}}>!</span>
                      </h1>
-                     <h1 className="mr6 ml6">My name is Yeison and I am starting out my career as a full-stack developer.<br/><br/>
-                     I'm always trying to improve and you can check out my work <a href="#">here!</a></h1>
+                     <h1 className="mr6 ml6">
+                        My name is Yeison and I am starting out my career as a full-stack developer.
+                        <br/><br/>
+                        I'm always trying to improve and you can check out my work
+                        <a href="#">here!</a>
+                     </h1>
                   <div className="flex justify-around mt6 mb5">
                         <div>
                            <h1 className="tc">Web Development</h1>
@@ -194,37 +199,113 @@ class App extends React.Component {
             <section>
                <h1 className="portfolioTitle tc">Some of my Work</h1>
                <div className="flex justify-center align-center">
-                  <div className="w-50">
-                     <Card src = {funnysite}/>
+                  <div className="w-50 pa4">
+                     <Card
+                        src = {funnysite}
+                        title = 'Funnysite'
+                        url="https://yeidan79.github.io/funnysite/"
+                        />
                   </div>
-                  <div className=" flex justify-center items-center w-50">
-                     <p>This is a great site!</p>
-                  </div>
-               </div>
-               <div className="flex justify-center align-center">
-                  <div className="flex justify-center items-center w-50">
-                     <p>This is another great site ok?</p>
-                  </div>
-                  <div className="w-50">
-                     <Card src = {funnysiteredux}/>
-                  </div>
-               </div>
-               <div className="flex justify-center align-center">
-                  <div className="w-50">
-                     <Card src = {mars}/>
-                  </div>
-                  <div className=" flex justify-center items-center w-50">
-                     <p>This is a great site!</p>
+                  <div className=" flex justify-center items-center w-50 pa4">
+                     <div>
+                        <p>Funnysite is a simple site that uses <span style={{color:'#DE0208'}}>
+                           React</span> to render a table and few buttons.</p>
+                        <p>The main focus is showing jokes about Chuck Norris (because
+                           everyone likes the old school Chuck jokes) that are fetched
+                           from an <span style={{color:'#DE0208'}}>API</span>. You can
+                           refresh or even add more jokes!</p>
+                        <p>Finally, if you hover over the numbers you'll get an
+                           interesting fact about them!</p>
+                     </div>
                   </div>
                </div>
                <div className="flex justify-center align-center">
-                  <div className="flex justify-center items-center w-50">
-                     <p>This is another great site ok?</p>
+                  <div className="flex justify-center items-center w-50 pa4">
+                     <div>
+                        <p>It has the same features of the normal Funnysite but this
+                           time it was developed using <span style={{color:'#DE0208'}}>
+                           React</span> + <span style={{color:'#DE0208'}}>Redux
+                           </span>!!!
+                        </p>
+                     </div>
                   </div>
-                  <div className="w-50">
-                     <a href="https://smartapp-face.herokuapp.com/">
-                        <Card src = {smartbrain}/>
-                     </a>
+                  <div className="w-50 pa4">
+                     <Card
+                        src = {funnysiteredux}
+                        title = 'Funnysite-Redux'
+                        url="https://yeidan79.github.io/funnysite-redux/"
+                        />
+                  </div>
+               </div>
+               <div className="flex justify-center align-center">
+                  <div className="w-50 pa4">
+                     <Card
+                        src = {mars}
+                        title = 'Mars'
+                        url="#"
+                        />
+                  </div>
+                  <div className=" flex justify-center items-center w-50 pa4">
+                     <div>
+                        <p>Well, this site is about <span style={{color:'#DE0208'}}>
+                        Mars</span>.</p>
+                        <ul>
+                           <li>
+                              <p>First, it has very nice background images that, combined with the
+                              images fetched from various NASAs API, makes this site to be dazzling!</p>
+                           </li>
+                           <li>
+                              <p>Second, to make something special on how to navigate through this
+                              Mars site, I had the idea of scrolling using our <span
+                              style={{color:'#DE0208'}}>voice</span>. And i did that using
+                              <span style={{color:'#DE0208'}}> IBMs AI Watson</span> Speech to text,
+                              so you can scroll using buttons or your own voice! Great!!</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div className="flex justify-center align-center">
+                  <div className="flex justify-center items-center w-50 pa4">
+                     <div>
+                        <p>This is a full-stack project that uses <span style={{color:'#DE0208'}}>
+                           React</span> for the front-end and <span style={{color:'#DE0208'}}>
+                           Node/Express.js</span> for the back-end with a <span style={{color:'#DE0208'}}>
+                           Postgresql</span> database to save all the registered users.</p>
+
+                        <p>Using a <span style={{color:'#DE0208'}}>demograpihics and face detection</span>
+                           API from <span style={{color:'#DE0208'}}>Clarifai</span>, a <span
+                           style={{color:'#DE0208'}}>registered</span> user can introduce an image url and
+                           the APIs AI will recognize the face in it and will tell us the approximate age and
+                           ethnicity!</p>
+
+                     </div>
+                  </div>
+                  <div className="w-50 pa4">
+                        <Card
+                           src = {smartbrain}
+                           title = 'FaceApp'
+                           url="https://smartapp-face.herokuapp.com/"
+                           />
+                  </div>
+               </div>
+               <div className="flex justify-center align-center">
+                  <div className="w-50 pa4">
+                        <Card
+                           src = {blog}
+                           title = 'Django Blog'
+                           url="#"
+                           />
+                  </div>
+                  <div className="flex justify-center items-center w-50 pa4">
+                     <div>
+                        <p>Here I have a classic blog site made with <span style={{color:'#DE0208'}}>
+                           Django</span> for the back-end with amazing capabilities like classifying
+                           posts, registering new users and customizing their profiles with images!</p>
+                        <p>For the front-end I downloaded a free blog <span style={{color:'#DE0208'}}>
+                           template</span> (html + css with bootstrap 4) and <span style={{color:'#DE0208'}}>
+                           transformed</span> it in order to make it work with django.</p>
+                     </div>
                   </div>
                </div>
             </section>

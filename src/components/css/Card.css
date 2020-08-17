@@ -3,7 +3,8 @@
 }
 
 .siteImage{
-   height: 250px;
+   height: 240px;
    width: auto;
    padding: 10px;
+   border-radius: 10%;
 }

@@ -11,9 +11,9 @@ body {
 }
 
 @font-face {
-font-family: 'American-Typewriter';
-font-weight: normal;
-src: url('AmericanTypewriterRegular.ttf');
+   font-family: 'American-Typewriter';
+   font-weight: normal;
+   src: url('AmericanTypewriterRegular.ttf');
 }
 
 .presentation{
