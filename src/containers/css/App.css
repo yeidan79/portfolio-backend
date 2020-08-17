@@ -1,0 +1,41 @@
+html, body {
+   margin:0;
+   padding:0;
+   color:white;
+}
+
+body {
+   background-image:url('../../images/rock.jpg');
+   background-attachment: fixed;
+   background-size: 100% 100%;
+}
+
+@font-face {
+font-family: 'American-Typewriter';
+font-weight: normal;
+src: url('AmericanTypewriterRegular.ttf');
+}
+
+.presentation{
+   font-size: 50px;
+   font-family: American-Typewriter, Geneva, Verdana, sans-serif;
+}
+
+p{
+   font-size: 20px;
+   font-family: American-Typewriter, Geneva, Verdana, sans-serif;
+}
+
+.myImage{
+   height: 400px;
+   width: auto;
+   border-radius: 20%;
+}
+
+a{
+   color: #DE0208;
+}
+
+.portfolioTitle{
+   font-size:60px;
+}
